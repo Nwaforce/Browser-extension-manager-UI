@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Toggle from "./component/Toggle";
-import Card from "./component/Card";
+import Toggle from "./components/Toggle";
+import Card from "./components/Card";
 
 const App = () => {
   const [extensions, setExtensions] = useState([]);

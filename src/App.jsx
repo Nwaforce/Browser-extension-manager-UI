@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Card from "./components/Card";
-import ToggleTheme from "./components/ToggleTheme";
-import "./styles.css";
+import Toggle from "./component/Toggle";
+import Card from "./component/Card";
 
 const App = () => {
   const [extensions, setExtensions] = useState([]);
@@ -24,11 +23,12 @@ const App = () => {
     <div className="container">
       <header>
         <h1>Extensions Dashboard</h1>
-        <ToggleTheme />
+     <Toggle />
       </header>
       <div className="grid">
         {extensions.map((ext, index) => (
           <Card key={index} {...ext} toggleActive={() => toggleActive(index)} />
+     
         ))}
       </div>
     </div>

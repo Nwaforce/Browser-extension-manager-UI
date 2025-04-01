@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles.css";
 
-const ToggleTheme = () => {
+const Toggle = () => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
   );
@@ -18,4 +18,4 @@ const ToggleTheme = () => {
   );
 };
 
-export default ToggleTheme;
+export default Toggle;

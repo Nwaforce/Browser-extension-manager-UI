@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-import data from "../src/components/data.json";
+import data from "./data.json";
 import "./styles.css";
 
 const App = () => {
@@ -24,12 +24,14 @@ const App = () => {
   return (
     <div className="container">
       <Navbar theme={theme} toggleTheme={handleToggleTheme} />
-      <h1>Extensions List</h1>
+     <div className="ListContainer">
+     <h1>Extensions List</h1>
       <div className="filters">
         <button onClick={() => setFilter("all")} className={filter === "all" ? "active" : ""}>All</button>
         <button onClick={() => setFilter("active")} className={filter === "active" ? "active" : ""}>Active</button>
         <button onClick={() => setFilter("inactive")} className={filter === "inactive" ? "active" : ""}>Inactive</button>
       </div>
+     </div>
       <div className="cards-container">
         {filteredData.map((extension, index) => (
           <Card key={index} extension={extension} />

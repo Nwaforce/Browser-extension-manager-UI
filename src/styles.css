@@ -88,3 +88,8 @@ input:checked + .slider {
 .filters .active {
   background: hsl(3, 86%, 64%);
 }
+.ListContainer {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

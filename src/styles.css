@@ -103,3 +103,42 @@ header {
 .remove-button:hover {
   background: hsl(3, 77%, 44%);
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(227, 75%, 14%);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.navbar-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-search {
+  flex: 1;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: hsl(226, 25%, 17%);
+  color: white;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

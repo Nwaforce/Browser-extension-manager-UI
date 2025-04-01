@@ -1,34 +1,38 @@
 import React, { useState, useEffect } from "react";
-import Toggle from "./components/Toggle";
+import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import data from "../src/components/data.json";
+import "./styles.css";
 
 const App = () => {
-  const [extensions, setExtensions] = useState([]);
+  const [theme, setTheme] = useState("dark");
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => setExtensions(data));
-  }, []);
+    document.body.setAttribute("data-theme", theme);
+  }, [theme]);
 
-  const toggleActive = (index) => {
-    setExtensions((prev) => {
-      const updated = [...prev];
-      updated[index].isActive = !updated[index].isActive;
-      return updated;
-    });
+  const handleToggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
+
+  const filteredData =
+    filter === "all"
+      ? data
+      : data.filter((item) => item.isActive === (filter === "active"));
 
   return (
     <div className="container">
-      <header>
-        <h1>Extensions Dashboard</h1>
-     <Toggle />
-      </header>
-      <div className="grid">
-        {extensions.map((ext, index) => (
-          <Card key={index} {...ext} toggleActive={() => toggleActive(index)} />
-     
+      <Navbar theme={theme} toggleTheme={handleToggleTheme} />
+      <h1>Extensions List</h1>
+      <div className="filters">
+        <button onClick={() => setFilter("all")} className={filter === "all" ? "active" : ""}>All</button>
+        <button onClick={() => setFilter("active")} className={filter === "active" ? "active" : ""}>Active</button>
+        <button onClick={() => setFilter("inactive")} className={filter === "inactive" ? "active" : ""}>Inactive</button>
+      </div>
+      <div className="cards-container">
+        {filteredData.map((extension, index) => (
+          <Card key={index} extension={extension} />
         ))}
       </div>
     </div>

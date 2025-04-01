@@ -1,105 +1,110 @@
 /* General Styles */
-body {
-  font-family: 'Noto Sans', sans-serif;
+* {
   margin: 0;
-  padding: 20px;
-  transition: background 0.3s ease, color 0.3s ease;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Light & Dark Mode */
-.light-theme {
-  background: hsl(200, 60%, 99%);
-  color: hsl(227, 75%, 14%);
-}
-
-.dark-theme {
-  background: linear-gradient(180deg, #040918 0%, #091540 100%);
-  color: hsl(0, 0%, 93%);
-}
-
-/* Container & Header */
 .container {
-  max-width: 1200px;
-  margin: auto;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s;
 }
 
-header {
+.container.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container.dark {
+  background: #121212;
+  color: #fff;
+}
+
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-  background: hsl(226, 25%, 17%);
-  color: hsl(0, 0%, 93%);
-  border: none;
-  padding: 10px 20px;
+.toggle-theme {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 16px;
   cursor: pointer;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
-.theme-toggle:hover {
-  background: hsl(3, 71%, 56%);
+.toggle-theme:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-/* Grid Layout */
-.grid {
+/* Extensions Grid */
+.extension-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-/* Card Styles */
-.card {
-  background: hsl(226, 25%, 17%);
-  padding: 20px;
+/* Extension Card */
+.extension-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.extension-card.active {
+  border: 2px solid #4caf50;
 }
 
-.active-card {
-  border-left: 5px solid hsl(3, 71%, 56%);
+.extension-card.inactive {
+  border: 2px solid #ff5252;
+  opacity: 0.6;
 }
 
-.inactive-card {
-  opacity: 0.5;
+.extension-card:hover {
+  transform: scale(1.05);
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Logo */
+.extension-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Button */
+.toggle-button {
   margin-top: 10px;
-}
-
-.remove-button {
-  background: hsl(3, 71%, 56%);
+  padding: 8px 16px;
   border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  color: white;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.remove-button:hover {
-  background: hsl(3, 77%, 44%);
+.toggle-button {
+  background: #4caf50;
+  color: white;
+}
+
+.extension-card.inactive .toggle-button {
+  background: #ff5252;
+}
+
+.toggle-button:hover {
+  opacity: 0.8;
 }

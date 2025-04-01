@@ -1,110 +1,105 @@
+/* General Styles */
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background: linear-gradient(180deg, #040918 0%, #091540 100%);
-    color: hsl(0, 0%, 93%);
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .filter-buttons button {
-    background: hsl(226, 25%, 17%);
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    color: hsl(0, 0%, 93%);
-    border-radius: 5px;
-  }
-  
-  .filter-buttons .active {
-    background: hsl(3, 71%, 56%);
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background: hsl(226, 25%, 17%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .active-card {
-    border-left: 5px solid hsl(3, 71%, 56%);
-  }
-  
-  .inactive-card {
-    opacity: 0.5;
-  }
-  
-  .card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .remove-button {
-    background: hsl(3, 71%, 56%);
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .toggle {
-    width: 40px;
-    height: 20px;
-    background: hsl(226, 11%, 37%);
-    border-radius: 20px;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .toggle-on {
-    background: hsl(3, 71%, 56%);
-  }
-  
-  .toggle-thumb {
-    width: 18px;
-    height: 18px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 1px;
-    left: 2px;
-    transition: transform 0.3s ease;
-  }
-  
-  .toggle-on .toggle-thumb {
-    transform: translateX(20px);
-  }
-  
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light & Dark Mode */
+.light-theme {
+  background: hsl(200, 60%, 99%);
+  color: hsl(227, 75%, 14%);
+}
+
+.dark-theme {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* Container & Header */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 93%);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: hsl(3, 71%, 56%);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: hsl(226, 25%, 17%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.active-card {
+  border-left: 5px solid hsl(3, 71%, 56%);
+}
+
+.inactive-card {
+  opacity: 0.5;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remove-button {
+  background: hsl(3, 71%, 56%);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background: hsl(3, 77%, 44%);
+}

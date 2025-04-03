@@ -24,14 +24,14 @@ const App = () => {
   return (
     <div className="container">
       <Navbar theme={theme} toggleTheme={handleToggleTheme} />
-     <div className="ListContainer">
-     <h1>Extensions List</h1>
-      <div className="filters">
-        <button onClick={() => setFilter("all")} className={filter === "all" ? "active" : ""}>All</button>
-        <button onClick={() => setFilter("active")} className={filter === "active" ? "active" : ""}>Active</button>
-        <button onClick={() => setFilter("inactive")} className={filter === "inactive" ? "active" : ""}>Inactive</button>
+      <div className="ListContainer">
+        <h1>Extensions List</h1>
+        <div className="filters">
+          <button onClick={() => setFilter("all")} className={filter === "all" ? "active" : ""}>All</button>
+          <button onClick={() => setFilter("active")} className={filter === "active" ? "active" : ""}>Active</button>
+          <button onClick={() => setFilter("inactive")} className={filter === "inactive" ? "active" : ""}>Inactive</button>
+        </div>
       </div>
-     </div>
       <div className="cards-container">
         {filteredData.map((extension, index) => (
           <Card key={index} extension={extension} />

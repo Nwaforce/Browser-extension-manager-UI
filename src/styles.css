@@ -1,3 +1,4 @@
+/* 🌙 Dark Mode & ☀️ Light Mode */
 body[data-theme="dark"] {
   background: #040918;
   color: white;
@@ -8,6 +9,7 @@ body[data-theme="light"] {
   color: black;
 }
 
+/* 🔹 Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,6 +19,7 @@ body[data-theme="light"] {
   border-radius: 10px;
 }
 
+/* 🌙 Theme Toggle Button */
 .theme-toggle {
   background: none;
   border: none;
@@ -24,6 +27,14 @@ body[data-theme="light"] {
   cursor: pointer;
 }
 
+/* 🔲 Extensions List Layout */
+.ListContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🔳 Card Grid */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -31,13 +42,15 @@ body[data-theme="light"] {
   margin-top: 20px;
 }
 
+/* 🟦 Card Styling */
 .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: hsl(226, 25%, 17%);
   padding: 15px;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  transition: 0.3s ease;
 }
 
 .card-logo {
@@ -45,19 +58,62 @@ body[data-theme="light"] {
   height: 40px;
 }
 
+.card-content {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 🔹 Card Actions (Remove Button + Toggle) */
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* ❌ Remove Button */
+.remove-btn {
+  padding: 6px 10px;
+  background: hsl(3, 86%, 64%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: hsl(3, 86%, 50%);
+}
+
+/* 🔄 Toggle Switch */
 .switch {
   position: relative;
   display: inline-block;
-  width: 34px;
-  height: 20px;
+  width: 40px;
+  height: 22px;
 }
 
+/* Hide default checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
+/* Toggle Slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -65,15 +121,33 @@ body[data-theme="light"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsl(225, 23%, 24%);
+  background-color: hsl(226, 11%, 37%);
   transition: 0.4s;
   border-radius: 34px;
 }
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* ✅ Active State */
 input:checked + .slider {
   background-color: hsl(3, 86%, 64%);
 }
 
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* 🎛️ Filter Buttons */
 .filters button {
   margin-right: 10px;
   padding: 5px 10px;
@@ -82,14 +156,13 @@ input:checked + .slider {
   cursor: pointer;
   background: hsl(226, 11%, 37%);
   color: white;
+  transition: 0.3s;
 }
 
 .filters .active {
   background: hsl(3, 86%, 64%);
 }
 
-.ListContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.filters button:hover {
+  background: hsl(3, 86%, 50%);
 }

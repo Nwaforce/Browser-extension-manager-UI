@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles.css";
-import "../data.json";
 
 const Card = ({ extension }) => {
   return (

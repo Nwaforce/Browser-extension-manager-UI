@@ -89,8 +89,9 @@ body[data-theme="light"] {
   align-items: center;
   background: hsl(226, 25%, 17%);
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.3s ease;
+  height: 12rem;
 }
 
 .card.active {

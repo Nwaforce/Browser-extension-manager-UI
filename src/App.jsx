@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-import data from "./data.json";
+import data from "../src/data";
 import "./styles.css";
 
 const App = () => {

@@ -2,11 +2,13 @@
 body[data-theme="dark"] {
   background: #040918;
   color: white;
+  margin: 2rem;
 }
 
 body[data-theme="light"] {
   background: #EEF8F9;
   color: black;
+  margin: 2rem;
 }
 
 /* 🔹 Navbar */
@@ -77,6 +79,7 @@ body[data-theme="light"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  
 }
 
 /* 🟦 Card Styling */
@@ -92,6 +95,7 @@ body[data-theme="light"] {
 
 .card.active {
   border: 2px solid hsl(3, 86%, 64%);
+  
 }
 
 .card.inactive {
@@ -101,6 +105,7 @@ body[data-theme="light"] {
 .card-logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 6rem;
 }
 
 .card-content {
@@ -123,8 +128,10 @@ body[data-theme="light"] {
 .card-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 19px;
   margin-left: auto;
+  justify-content: space-between;
+  /* margin-top: 3rem; */
 }
 
 

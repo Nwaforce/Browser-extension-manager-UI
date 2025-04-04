@@ -85,6 +85,7 @@ body[data-theme="light"] {
 /* 🟦 Card Styling */
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: hsl(226, 25%, 17%);
@@ -110,7 +111,8 @@ body[data-theme="light"] {
 }
 
 .card-content {
-  flex-grow: 1;
+  display: flex;
+  gap: 10px;
   padding: 0 10px;
 }
 
@@ -129,7 +131,7 @@ body[data-theme="light"] {
 .card-actions {
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 11rem;
   margin-left: auto;
   justify-content: space-between;
   /* margin-top: 3rem; */
@@ -139,10 +141,10 @@ body[data-theme="light"] {
 /* ❌ Remove Button */
 .remove-btn {
   padding: 6px 10px;
-  background: hsl(3, 86%, 64%);
+  background-color: hsla(12, 3.20%, 69.60%, 0.01);
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;

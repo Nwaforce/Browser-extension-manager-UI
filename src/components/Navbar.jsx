@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles.css";
+import logo from "../assets/images/logo.svg";
 
 const Navbar = ({ theme, toggleTheme }) => {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <div className="logo">🔗 Extensions</div>
+        <div className="logo"><img src={logo} alt="" /></div>
       </div>
       <div className="nav-right">
         <button onClick={toggleTheme} className="theme-toggle">

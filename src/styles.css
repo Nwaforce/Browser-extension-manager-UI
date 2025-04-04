@@ -16,7 +16,7 @@ body[data-theme="light"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: hsl(227, 75%, 14%);
+  background: hsl(226, 31.60%, 44.10%);
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -88,7 +88,7 @@ body[data-theme="light"] {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: hsl(226, 25%, 17%);
+  background: hsla(226, 60.20%, 61.60%, 0.45);
   padding: 15px;
   border-radius: 20px;
   transition: 0.3s ease;
@@ -209,4 +209,7 @@ input:checked + .slider:before {
     flex-direction: column;
     gap: 20px;
   }
+}
+.container {
+  margin: 3rem;
 }

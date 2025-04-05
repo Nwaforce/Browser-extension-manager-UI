@@ -223,7 +223,8 @@ input:checked + .slider:before {
 
   .filters {
     display: flex;
-    gap: 6px;
+    width: 100%;
+    gap: 14px;
   }
 
   .filters button {

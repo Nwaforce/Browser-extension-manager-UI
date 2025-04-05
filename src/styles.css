@@ -211,6 +211,9 @@ input:checked + .slider:before {
     align-items: center;
     gap: 10px;
   }
+  .container{
+    padding: 0;
+  }
 
   .ListContainer h1 {
     text-align: center;
@@ -244,16 +247,21 @@ input:checked + .slider:before {
     border: 1px solid rgba(255, 255, 255, 0.15); /* Softer border */
   }
 
-  /* 🔹 Card Actions */
   .card-actions {
-    display: flex;
-    justify-content: space-between;
-    /* width: 100%; */
+    flex-direction: row;  /* Stack items vertically */
+    align-items: center;
+    gap: 8px;  /* Reduce spacing */
+    width: 100%;
   }
 
   .remove-btn {
-    font-size: 12px;
-    padding: 5px 10px;
+    width: 30%;  /* Make button full width */
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .switch {
+    transform: scale(0.9); /* Slightly reduce switch size */
   }
 }
 

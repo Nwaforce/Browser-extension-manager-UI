@@ -203,13 +203,60 @@ input:checked + .slider:before {
   transform: translateX(18px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  /* 🟦 Heading & Filters Fix */
   .ListContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ListContainer h1 {
+    text-align: center;
+    font-size: 22px; /* Adjusted */
+    margin-bottom: 5px;
+  }
+
+  .filters {
+    display: flex;
+    gap: 6px;
+  }
+
+  .filters button {
+    padding: 6px 12px;
+    font-size: 14px;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  /* 🔳 Cards Adjustments */
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Softer border */
+  }
+
+  /* 🔹 Card Actions */
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+  }
+
+  .remove-btn {
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }
-.container {
+
+/* .container {
   margin: 3rem;
-}
+} */

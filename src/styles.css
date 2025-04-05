@@ -223,8 +223,8 @@ input:checked + .slider:before {
 
   .filters {
     display: flex;
-    width: 100%;
-    gap: 14px;
+    width: 85%;
+    gap: 20px;
   }
 
   .filters button {
@@ -265,6 +265,13 @@ input:checked + .slider:before {
     transform: scale(0.9); /* Slightly reduce switch size */
   }
 }
+/* @media screen and (max-width: 414px){
+  .filters {
+    display: flex;
+    width: 100%;
+    gap: 36px;
+  }
+} */
 
 /* .container {
   margin: 3rem;

@@ -6,7 +6,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="light"] {
-  background:rgba(238, 248, 249, 0.86);
+  background: rgba(238, 248, 249, 0.86);
   color: black;
   margin: 2rem;
 }
@@ -16,7 +16,7 @@ body[data-theme="light"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: hsl(226, 31.60%, 44.10%);
+  background: hsl(226, 31.6%, 44.1%);
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -79,7 +79,6 @@ body[data-theme="light"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  
 }
 
 /* 🟦 Card Styling */
@@ -88,7 +87,7 @@ body[data-theme="light"] {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: hsla(226, 60.20%, 61.60%, 0.45);
+  background: hsla(226, 60.2%, 61.6%, 0.45);
   padding: 15px;
   border-radius: 20px;
   transition: 0.3s ease;
@@ -97,7 +96,6 @@ body[data-theme="light"] {
 
 .card.active {
   border: 2px solid hsl(3, 86%, 64%);
-  
 }
 
 .card.inactive {
@@ -137,11 +135,10 @@ body[data-theme="light"] {
   /* margin-top: 3rem; */
 }
 
-
 /* ❌ Remove Button */
 .remove-btn {
   padding: 6px 10px;
-  background-color: hsla(12, 3.20%, 69.60%, 0.01);
+  background-color: hsla(12, 3.2%, 69.6%, 0.01);
   color: white;
   border: 1px solid;
   border-radius: 10px;
@@ -211,7 +208,7 @@ input:checked + .slider:before {
     align-items: center;
     gap: 10px;
   }
-  .container{
+  .container {
     padding: 0;
   }
 
@@ -249,14 +246,14 @@ input:checked + .slider:before {
   }
 
   .card-actions {
-    flex-direction: row;  /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     align-items: center;
-    gap: 8px;  /* Reduce spacing */
+    gap: 8px; /* Reduce spacing */
     width: 100%;
   }
 
   .remove-btn {
-    width: 30%;  /* Make button full width */
+    width: 30%; /* Make button full width */
     text-align: center;
     padding: 5px 0;
   }

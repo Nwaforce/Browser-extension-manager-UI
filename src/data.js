@@ -15,7 +15,8 @@ const data = [
   {
     logo: devLensLogo,
     name: "DevLens",
-    description: "Quickly inspect page layouts and visualize element boundaries.",
+    description:
+      "Quickly inspect page layouts and visualize element boundaries.",
     isActive: true,
   },
   {
@@ -33,7 +34,8 @@ const data = [
   {
     logo: jsonWizardLogo,
     name: "JSONWizard",
-    description: "Formats, validates, and prettifies JSON responses in-browser.",
+    description:
+      "Formats, validates, and prettifies JSON responses in-browser.",
     isActive: true,
   },
   {
@@ -45,19 +47,22 @@ const data = [
   {
     logo: viewportBuddyLogo,
     name: "ViewportBuddy",
-    description: "Simulates various screen resolutions directly within the browser.",
+    description:
+      "Simulates various screen resolutions directly within the browser.",
     isActive: false,
   },
   {
     logo: markupNotesLogo,
     name: "Markup Notes",
-    description: "Enables annotation and notes directly onto webpages for collaborative debugging.",
+    description:
+      "Enables annotation and notes directly onto webpages for collaborative debugging.",
     isActive: true,
   },
   {
     logo: gridGuidesLogo,
     name: "GridGuides",
-    description: "Overlay customizable grids and alignment guides on any webpage.",
+    description:
+      "Overlay customizable grids and alignment guides on any webpage.",
     isActive: false,
   },
   {
@@ -81,7 +86,8 @@ const data = [
   {
     logo: consolePlusLogo,
     name: "ConsolePlus",
-    description: "Enhanced developer console with advanced filtering and logging.",
+    description:
+      "Enhanced developer console with advanced filtering and logging.",
     isActive: true,
   },
 ];

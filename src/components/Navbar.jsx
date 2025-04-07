@@ -6,7 +6,9 @@ const Navbar = ({ theme, toggleTheme }) => {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <div className="logo"><img src={logo} alt="" /></div>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
       </div>
       <div className="nav-right">
         <button onClick={toggleTheme} className="theme-toggle">

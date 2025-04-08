@@ -70,7 +70,6 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
-const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```

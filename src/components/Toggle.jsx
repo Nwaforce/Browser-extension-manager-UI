@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles.css";
-
+ 
 const Toggle = () => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -17,5 +17,5 @@ const Toggle = () => {
     </button>
   );
 };
-
+ 
 export default Toggle;

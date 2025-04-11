@@ -4,7 +4,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 ## Table of contents
 
-<!--
+
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
@@ -13,7 +13,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments) -->
+- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 

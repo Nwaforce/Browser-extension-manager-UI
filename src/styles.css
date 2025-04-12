@@ -235,7 +235,7 @@ input:checked + .slider:before {
     text-align: center;
   }
 
-  /* 🔳 Cards Adjustments */
+  
   .cards-container {
     display: flex;
     flex-direction: column;
@@ -246,8 +246,7 @@ input:checked + .slider:before {
     width: 100%;
     padding: 15px;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Softer border */
-  }
+    border: 1px solid rgba(255, 255, 255, 0.15); 
 
   .card-actions {
     flex-direction: row; 

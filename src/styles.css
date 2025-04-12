@@ -10,13 +10,17 @@ body[data-theme="light"] {
   color: black;
   margin: 2rem;
 }
+body[data-theme="dark"] .navbar .logo img {
+  filter: brightness(0) invert(1);
+}
+
 
 /* 🔹 Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: hsl(226, 31.6%, 44.1%);
+  background: hsla(225, 18.20%, 91.40%, 0.48);
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -40,6 +44,7 @@ body[data-theme="light"] {
   font-size: 20px;
   cursor: pointer;
   color: white;
+  color: inherit;
 }
 
 /* 🔲 Extensions List & Filters */

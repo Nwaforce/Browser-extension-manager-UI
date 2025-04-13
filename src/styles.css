@@ -195,7 +195,7 @@ body[data-theme="dark"] .navbar .logo img {
   border-radius: 50%;
 }
 
-/* ✅ Active State */
+
 input:checked + .slider {
   background-color: hsl(3, 86%, 64%);
 }

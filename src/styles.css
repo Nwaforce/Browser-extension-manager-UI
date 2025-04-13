@@ -235,7 +235,6 @@ input:checked + .slider:before {
     text-align: center;
   }
 
- 
   .cards-container {
     display: flex;
     flex-direction: column;
@@ -250,19 +249,19 @@ input:checked + .slider:before {
   }
 
   .card-actions {
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: 8px;
     width: 100%;
   }
 
   .remove-btn {
-    width: 30%; 
+    width: 30%;
     text-align: center;
     padding: 5px 0;
   }
 
   .switch {
-    transform: scale(0.9); 
+    transform: scale(0.9);
   }
 }

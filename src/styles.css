@@ -235,7 +235,7 @@ input:checked + .slider:before {
     text-align: center;
   }
 
-  /* 🔳 Cards Adjustments */
+ 
   .cards-container {
     display: flex;
     flex-direction: column;

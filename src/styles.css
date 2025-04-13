@@ -218,7 +218,7 @@ input:checked + .slider:before {
 
   .ListContainer h1 {
     text-align: center;
-    font-size: 22px; /* Adjusted */
+    font-size: 22px;
     margin-bottom: 5px;
   }
 

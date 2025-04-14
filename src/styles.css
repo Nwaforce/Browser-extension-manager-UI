@@ -195,7 +195,6 @@ body[data-theme="dark"] .navbar .logo img {
   border-radius: 50%;
 }
 
-
 input:checked + .slider {
   background-color: hsl(3, 86%, 64%);
 }
